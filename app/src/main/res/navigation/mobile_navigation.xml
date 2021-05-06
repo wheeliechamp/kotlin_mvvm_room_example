@@ -22,4 +22,17 @@
         android:name="com.wheeliechamp.navigationdraweractivity.view.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_aaa"
+        android:name="com.wheeliechamp.navigationdraweractivity.view.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@xml/root_preferences" />
+
+    <fragment
+        android:id="@+id/nav_bbb"
+        android:name="com.wheeliechamp.navigationdraweractivity.view.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@xml/root_preferences" />
+
 </navigation>
