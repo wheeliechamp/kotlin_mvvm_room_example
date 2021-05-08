@@ -29,7 +29,7 @@ class HomeViewModel : ViewModel() {
     }
 
     val text: LiveData<String> = _text
-    val countText = MutableLiveData<String>("MutableLiveData<String>")
+    val countText = MutableLiveData<String>("MutableLiveData")
 
     fun start() {
     }
