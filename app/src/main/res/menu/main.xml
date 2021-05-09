@@ -7,9 +7,4 @@
         android:title="Settings"
         app:showAsAction="never" />
 
-    <item
-        android:id="@+id/home_page_option"
-        android:title="Home Page"
-        app:showAsAction="never" />
-
 </menu>

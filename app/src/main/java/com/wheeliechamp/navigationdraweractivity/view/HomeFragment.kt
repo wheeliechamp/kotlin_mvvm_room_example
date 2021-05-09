@@ -1,6 +1,7 @@
 package com.wheeliechamp.navigationdraweractivity.view
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,6 +10,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.preference.PreferenceManager
 import com.wheeliechamp.navigationdraweractivity.R
 import com.wheeliechamp.navigationdraweractivity.databinding.FragmentHomeBinding
 import com.wheeliechamp.navigationdraweractivity.viewmodel.HomeViewModel
@@ -25,6 +27,10 @@ class HomeFragment : Fragment() {
     ): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
         binding.setLifecycleOwner(this)
+
+        val sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getActivity())
+        val name = sharedPreferences.getString("signature", "")
+        Log.d("Test", "================$name")
         return binding.getRoot()
     }
 
